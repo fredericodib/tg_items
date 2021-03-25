@@ -146,3 +146,130 @@ Item 17 {"id":17,"name":"caderno","value":30,"created_at":"2021-03-25T13:28:44.6
 status: 200
 retorno:
 [{"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"},{"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"},{"id":9,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:56.471Z","updated_at":"2021-03-16T23:31:56.471Z"},{"id":10,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.425Z","updated_at":"2021-03-16T23:31:57.425Z"},{"id":11,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.902Z","updated_at":"2021-03-16T23:31:57.902Z"},{"id":12,"name":"caderno","value":30,"created_at":"2021-03-25T00:36:00.443Z","updated_at":"2021-03-25T00:36:00.443Z"},{"id":13,"name":"caderno","value":30,"created_at":"2021-03-25T13:16:29.013Z","updated_at":"2021-03-25T13:16:29.013Z"},{"id":14,"name":"caderno","value":30,"created_at":"2021-03-25T13:19:44.046Z","updated_at":"2021-03-25T13:19:44.046Z"},{"id":15,"name":"caderno","value":30,"created_at":"2021-03-25T13:20:56.757Z","updated_at":"2021-03-25T13:20:56.757Z"},{"id":16,"name":"caderno","value":30,"created_at":"2021-03-25T13:21:40.774Z","updated_at":"2021-03-25T13:21:40.774Z"},{"id":17,"name":"caderno","value":30,"created_at":"2021-03-25T13:28:44.695Z","updated_at":"2021-03-25T13:28:44.695Z"}]
+
+
+new_test:
+controller: items
+action: create
+body: {"item":{"name":"caderno","value":"30"},"controller":"items","action":"create"}
+headers: {}
+path: /items
+method: POST
+data:
+Item 6 {"id":6,"name":"caderno","value":30}
+Item 8 {"id":8,"name":"caderno","value":30}
+Item 9 {"id":9,"name":"caderno","value":30}
+Item 10 {"id":10,"name":"caderno","value":30}
+Item 11 {"id":11,"name":"caderno","value":30}
+Item 12 {"id":12,"name":"caderno","value":30}
+Item 13 {"id":13,"name":"caderno","value":30}
+Item 14 {"id":14,"name":"caderno","value":30}
+Item 15 {"id":15,"name":"caderno","value":30}
+Item 16 {"id":16,"name":"caderno","value":30}
+Item 17 {"id":17,"name":"caderno","value":30}
+status: 201
+retorno:
+{"id":18,"name":"caderno","value":30,"created_at":"2021-03-25T14:18:25.618Z","updated_at":"2021-03-25T14:18:25.618Z"}
+
+
+new_test:
+controller: items
+action: create
+body: {"item":{"name":"caderno","value":"30"},"controller":"items","action":"create"}
+headers: {}
+path: /items
+method: POST
+data:
+Item 6 {"id":6,"name":"caderno","value":30}
+Item 8 {"id":8,"name":"caderno","value":30}
+Item 9 {"id":9,"name":"caderno","value":30}
+Item 10 {"id":10,"name":"caderno","value":30}
+Item 11 {"id":11,"name":"caderno","value":30}
+Item 12 {"id":12,"name":"caderno","value":30}
+Item 13 {"id":13,"name":"caderno","value":30}
+Item 14 {"id":14,"name":"caderno","value":30}
+Item 15 {"id":15,"name":"caderno","value":30}
+Item 16 {"id":16,"name":"caderno","value":30}
+Item 17 {"id":17,"name":"caderno","value":30}
+Item 18 {"id":18,"name":"caderno","value":30}
+status: 201
+retorno:
+{"id":19,"name":"caderno","value":30,"created_at":"2021-03-25T14:18:27.160Z","updated_at":"2021-03-25T14:18:27.160Z"}
+
+
+new_test:
+controller: items
+action: index
+body: {"controller":"items","action":"index"}
+headers: {}
+path: /items
+method: GET
+data:
+Item 6 {"id":6,"name":"caderno","value":30}
+Item 8 {"id":8,"name":"caderno","value":30}
+Item 9 {"id":9,"name":"caderno","value":30}
+Item 10 {"id":10,"name":"caderno","value":30}
+Item 11 {"id":11,"name":"caderno","value":30}
+Item 12 {"id":12,"name":"caderno","value":30}
+Item 13 {"id":13,"name":"caderno","value":30}
+Item 14 {"id":14,"name":"caderno","value":30}
+Item 15 {"id":15,"name":"caderno","value":30}
+Item 16 {"id":16,"name":"caderno","value":30}
+Item 17 {"id":17,"name":"caderno","value":30}
+Item 18 {"id":18,"name":"caderno","value":30}
+Item 19 {"id":19,"name":"caderno","value":30}
+status: 200
+retorno:
+[{"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"},{"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"},{"id":9,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:56.471Z","updated_at":"2021-03-16T23:31:56.471Z"},{"id":10,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.425Z","updated_at":"2021-03-16T23:31:57.425Z"},{"id":11,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.902Z","updated_at":"2021-03-16T23:31:57.902Z"},{"id":12,"name":"caderno","value":30,"created_at":"2021-03-25T00:36:00.443Z","updated_at":"2021-03-25T00:36:00.443Z"},{"id":13,"name":"caderno","value":30,"created_at":"2021-03-25T13:16:29.013Z","updated_at":"2021-03-25T13:16:29.013Z"},{"id":14,"name":"caderno","value":30,"created_at":"2021-03-25T13:19:44.046Z","updated_at":"2021-03-25T13:19:44.046Z"},{"id":15,"name":"caderno","value":30,"created_at":"2021-03-25T13:20:56.757Z","updated_at":"2021-03-25T13:20:56.757Z"},{"id":16,"name":"caderno","value":30,"created_at":"2021-03-25T13:21:40.774Z","updated_at":"2021-03-25T13:21:40.774Z"},{"id":17,"name":"caderno","value":30,"created_at":"2021-03-25T13:28:44.695Z","updated_at":"2021-03-25T13:28:44.695Z"},{"id":18,"name":"caderno","value":30,"created_at":"2021-03-25T14:18:25.618Z","updated_at":"2021-03-25T14:18:25.618Z"},{"id":19,"name":"caderno","value":30,"created_at":"2021-03-25T14:18:27.160Z","updated_at":"2021-03-25T14:18:27.160Z"}]
+
+
+new_test:
+controller: items
+action: show
+body: {"controller":"items","action":"show","id":"6"}
+headers: {"Authorization":"dedeed"}
+path: /items/6
+method: GET
+data:
+Item 6 {"id":6,"name":"caderno","value":30}
+Item 8 {"id":8,"name":"caderno","value":30}
+Item 9 {"id":9,"name":"caderno","value":30}
+Item 10 {"id":10,"name":"caderno","value":30}
+Item 11 {"id":11,"name":"caderno","value":30}
+Item 12 {"id":12,"name":"caderno","value":30}
+Item 13 {"id":13,"name":"caderno","value":30}
+Item 14 {"id":14,"name":"caderno","value":30}
+Item 15 {"id":15,"name":"caderno","value":30}
+Item 16 {"id":16,"name":"caderno","value":30}
+Item 17 {"id":17,"name":"caderno","value":30}
+Item 18 {"id":18,"name":"caderno","value":30}
+Item 19 {"id":19,"name":"caderno","value":30}
+status: 200
+retorno:
+{"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"}
+
+
+new_test:
+controller: items
+action: update
+body: {"item":{"value":"5000000"},"controller":"items","action":"update","id":"6"}
+headers: {}
+path: /items/6
+method: PATCH
+data:
+Item 6 {"id":6,"name":"caderno","value":30}
+Item 8 {"id":8,"name":"caderno","value":30}
+Item 9 {"id":9,"name":"caderno","value":30}
+Item 10 {"id":10,"name":"caderno","value":30}
+Item 11 {"id":11,"name":"caderno","value":30}
+Item 12 {"id":12,"name":"caderno","value":30}
+Item 13 {"id":13,"name":"caderno","value":30}
+Item 14 {"id":14,"name":"caderno","value":30}
+Item 15 {"id":15,"name":"caderno","value":30}
+Item 16 {"id":16,"name":"caderno","value":30}
+Item 17 {"id":17,"name":"caderno","value":30}
+Item 18 {"id":18,"name":"caderno","value":30}
+Item 19 {"id":19,"name":"caderno","value":30}
+status: 200
+retorno:
+{"id":6,"value":5000000,"name":"caderno","created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-25T14:19:03.460Z"}
