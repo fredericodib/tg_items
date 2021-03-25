@@ -35,6 +35,7 @@ group :development, :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'rspec'
+  gem 'simplecov', require: false, group: :test
   
   gem 'bdd_generator', '1.0', git: "https://github.com/fredericodib/bdd_generator", branch: "main"
 end

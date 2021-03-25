@@ -2,242 +2,12 @@
 
 new_test:
 controller: items
-action: create
-params: {"item":{"name":"caderno","value":"30"},"controller":"items","action":"create"}
-path: /items
-method: POST
-data:
-status: 201
-retorno:
-{"id":1,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:13.999Z","updated_at":"2021-03-16T23:31:13.999Z"}
-
-
-new_test:
-controller: items
-action: index
-params: {"controller":"items","action":"index"}
-path: /items
-method: GET
-data:
-Item 1 {"id":1,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:13.999Z","updated_at":"2021-03-16T23:31:13.999Z"}
-status: 200
-retorno:
-[{"id":1,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:13.999Z","updated_at":"2021-03-16T23:31:13.999Z"}]
-
-
-new_test:
-controller: items
 action: show
-params: {"controller":"items","action":"show","id":"1"}
-path: /items/1
+body: {"controller":"items","action":"show","id":"3"}
+headers: {"Authorization":"dedeed"}
+path: /items/3
 method: GET
 data:
-Item 1 {"id":1,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:13.999Z","updated_at":"2021-03-16T23:31:13.999Z"}
-status: 200
-retorno:
-{"id":1,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:13.999Z","updated_at":"2021-03-16T23:31:13.999Z"}
-
-
-new_test:
-controller: items
-action: index
-params: {"controller":"items","action":"index"}
-path: /items
-method: GET
-data:
-status: 200
-retorno:
-[]
-
-
-new_test:
-controller: items
-action: create
-params: {"item":{"name":"caderno","value":"30"},"controller":"items","action":"create"}
-path: /items
-method: POST
-data:
-status: 201
-retorno:
-{"id":2,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:35.461Z","updated_at":"2021-03-16T23:31:35.461Z"}
-
-
-new_test:
-controller: items
-action: create
-params: {"item":{"name":"caderno","value":"30"},"controller":"items","action":"create"}
-path: /items
-method: POST
-data:
-Item 2 {"id":2,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:35.461Z","updated_at":"2021-03-16T23:31:35.461Z"}
-status: 201
-retorno:
-{"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"}
-
-
-new_test:
-controller: items
-action: create
-params: {"item":{"name":"caderno","value":"30"},"controller":"items","action":"create"}
-path: /items
-method: POST
-data:
-Item 2 {"id":2,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:35.461Z","updated_at":"2021-03-16T23:31:35.461Z"}
-Item 3 {"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"}
-status: 201
-retorno:
-{"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"}
-
-
-new_test:
-controller: items
-action: create
-params: {"item":{"name":"caderno","value":"30"},"controller":"items","action":"create"}
-path: /items
-method: POST
-data:
-Item 2 {"id":2,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:35.461Z","updated_at":"2021-03-16T23:31:35.461Z"}
-Item 3 {"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"}
-Item 4 {"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"}
-status: 201
-retorno:
-{"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
-
-
-new_test:
-controller: items
-action: create
-params: {"item":{"name":"caderno","value":"30"},"controller":"items","action":"create"}
-path: /items
-method: POST
-data:
-Item 2 {"id":2,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:35.461Z","updated_at":"2021-03-16T23:31:35.461Z"}
-Item 3 {"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"}
-Item 4 {"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"}
-Item 5 {"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
-status: 201
-retorno:
-{"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"}
-
-
-new_test:
-controller: items
-action: create
-params: {"item":{"name":"caderno","value":"30"},"controller":"items","action":"create"}
-path: /items
-method: POST
-data:
-Item 2 {"id":2,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:35.461Z","updated_at":"2021-03-16T23:31:35.461Z"}
-Item 3 {"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"}
-Item 4 {"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"}
-Item 5 {"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
-Item 6 {"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"}
-status: 201
-retorno:
-{"id":7,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:38.958Z","updated_at":"2021-03-16T23:31:38.958Z"}
-
-
-new_test:
-controller: items
-action: create
-params: {"item":{"name":"caderno","value":"30"},"controller":"items","action":"create"}
-path: /items
-method: POST
-data:
-Item 2 {"id":2,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:35.461Z","updated_at":"2021-03-16T23:31:35.461Z"}
-Item 3 {"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"}
-Item 4 {"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"}
-Item 5 {"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
-Item 6 {"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"}
-Item 7 {"id":7,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:38.958Z","updated_at":"2021-03-16T23:31:38.958Z"}
-status: 201
-retorno:
-{"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"}
-
-
-new_test:
-controller: items
-action: index
-params: {"controller":"items","action":"index"}
-path: /items
-method: GET
-data:
-Item 2 {"id":2,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:35.461Z","updated_at":"2021-03-16T23:31:35.461Z"}
-Item 3 {"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"}
-Item 4 {"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"}
-Item 5 {"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
-Item 6 {"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"}
-Item 8 {"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"}
-status: 200
-retorno:
-[{"id":2,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:35.461Z","updated_at":"2021-03-16T23:31:35.461Z"},{"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"},{"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"},{"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"},{"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"},{"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"}]
-
-
-new_test:
-controller: items
-action: create
-params: {"item":{"name":"caderno","value":"30"},"controller":"items","action":"create"}
-path: /items
-method: POST
-data:
-Item 2 {"id":2,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:35.461Z","updated_at":"2021-03-16T23:31:35.461Z"}
-Item 3 {"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"}
-Item 4 {"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"}
-Item 5 {"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
-Item 6 {"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"}
-Item 8 {"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"}
-status: 201
-retorno:
-{"id":9,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:56.471Z","updated_at":"2021-03-16T23:31:56.471Z"}
-
-
-new_test:
-controller: items
-action: create
-params: {"item":{"name":"caderno","value":"30"},"controller":"items","action":"create"}
-path: /items
-method: POST
-data:
-Item 2 {"id":2,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:35.461Z","updated_at":"2021-03-16T23:31:35.461Z"}
-Item 3 {"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"}
-Item 4 {"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"}
-Item 5 {"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
-Item 6 {"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"}
-Item 8 {"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"}
-Item 9 {"id":9,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:56.471Z","updated_at":"2021-03-16T23:31:56.471Z"}
-status: 201
-retorno:
-{"id":10,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.425Z","updated_at":"2021-03-16T23:31:57.425Z"}
-
-
-new_test:
-controller: items
-action: create
-params: {"item":{"name":"caderno","value":"30"},"controller":"items","action":"create"}
-path: /items
-method: POST
-data:
-Item 2 {"id":2,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:35.461Z","updated_at":"2021-03-16T23:31:35.461Z"}
-Item 3 {"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"}
-Item 4 {"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"}
-Item 5 {"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
-Item 6 {"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"}
-Item 8 {"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"}
-Item 9 {"id":9,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:56.471Z","updated_at":"2021-03-16T23:31:56.471Z"}
-Item 10 {"id":10,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.425Z","updated_at":"2021-03-16T23:31:57.425Z"}
-status: 201
-retorno:
-{"id":11,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.902Z","updated_at":"2021-03-16T23:31:57.902Z"}
-
-
-new_test:
-controller: items
-action: index
-params: {"controller":"items","action":"index"}
-path: /items
-method: GET
-data:
-Item 2 {"id":2,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:35.461Z","updated_at":"2021-03-16T23:31:35.461Z"}
 Item 3 {"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"}
 Item 4 {"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"}
 Item 5 {"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
@@ -248,4 +18,150 @@ Item 10 {"id":10,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.4
 Item 11 {"id":11,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.902Z","updated_at":"2021-03-16T23:31:57.902Z"}
 status: 200
 retorno:
-[{"id":2,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:35.461Z","updated_at":"2021-03-16T23:31:35.461Z"},{"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"},{"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"},{"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"},{"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"},{"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"},{"id":9,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:56.471Z","updated_at":"2021-03-16T23:31:56.471Z"},{"id":10,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.425Z","updated_at":"2021-03-16T23:31:57.425Z"},{"id":11,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.902Z","updated_at":"2021-03-16T23:31:57.902Z"}]
+{"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"}
+
+
+new_test:
+controller: items
+action: show
+body: {"controller":"items","action":"show","id":"3"}
+headers: {}
+path: /items/3
+method: GET
+data:
+Item 3 {"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"}
+Item 4 {"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"}
+Item 5 {"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
+Item 6 {"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"}
+Item 8 {"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"}
+Item 9 {"id":9,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:56.471Z","updated_at":"2021-03-16T23:31:56.471Z"}
+Item 10 {"id":10,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.425Z","updated_at":"2021-03-16T23:31:57.425Z"}
+Item 11 {"id":11,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.902Z","updated_at":"2021-03-16T23:31:57.902Z"}
+status: 200
+retorno:
+{"id":3,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.163Z","updated_at":"2021-03-16T23:31:36.163Z"}
+
+
+new_test:
+controller: items
+action: index
+body: {"controller":"items","action":"index"}
+headers: {}
+path: /items
+method: GET
+data:
+Item 4 {"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"}
+Item 5 {"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
+Item 6 {"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"}
+Item 8 {"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"}
+Item 9 {"id":9,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:56.471Z","updated_at":"2021-03-16T23:31:56.471Z"}
+Item 10 {"id":10,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.425Z","updated_at":"2021-03-16T23:31:57.425Z"}
+Item 11 {"id":11,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.902Z","updated_at":"2021-03-16T23:31:57.902Z"}
+Item 12 {"id":12,"name":"caderno","value":30,"created_at":"2021-03-25T00:36:00.443Z","updated_at":"2021-03-25T00:36:00.443Z"}
+status: 200
+retorno:
+[{"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"},{"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"},{"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"},{"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"},{"id":9,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:56.471Z","updated_at":"2021-03-16T23:31:56.471Z"},{"id":10,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.425Z","updated_at":"2021-03-16T23:31:57.425Z"},{"id":11,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.902Z","updated_at":"2021-03-16T23:31:57.902Z"},{"id":12,"name":"caderno","value":30,"created_at":"2021-03-25T00:36:00.443Z","updated_at":"2021-03-25T00:36:00.443Z"}]
+
+
+new_test:
+controller: items
+action: update
+body: {"item":{"name":"clarita caneca"},"controller":"items","action":"update","id":"4"}
+headers: {}
+path: /items/4
+method: PATCH
+data:
+Item 4 {"id":4,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-16T23:31:36.839Z"}
+Item 5 {"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
+Item 6 {"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"}
+Item 8 {"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"}
+Item 9 {"id":9,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:56.471Z","updated_at":"2021-03-16T23:31:56.471Z"}
+Item 10 {"id":10,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.425Z","updated_at":"2021-03-16T23:31:57.425Z"}
+Item 11 {"id":11,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.902Z","updated_at":"2021-03-16T23:31:57.902Z"}
+Item 12 {"id":12,"name":"caderno","value":30,"created_at":"2021-03-25T00:36:00.443Z","updated_at":"2021-03-25T00:36:00.443Z"}
+status: 200
+retorno:
+{"id":4,"name":"clarita caneca","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-25T00:38:28.873Z"}
+
+
+new_test:
+controller: items
+action: update
+body: {"item":{"value":"5000000"},"controller":"items","action":"update","id":"4"}
+headers: {}
+path: /items/4
+method: PATCH
+data:
+Item 4 {"id":4,"name":"clarita caneca","value":30,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-25T00:38:28.873Z"}
+Item 5 {"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
+Item 6 {"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"}
+Item 8 {"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"}
+Item 9 {"id":9,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:56.471Z","updated_at":"2021-03-16T23:31:56.471Z"}
+Item 10 {"id":10,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.425Z","updated_at":"2021-03-16T23:31:57.425Z"}
+Item 11 {"id":11,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.902Z","updated_at":"2021-03-16T23:31:57.902Z"}
+Item 12 {"id":12,"name":"caderno","value":30,"created_at":"2021-03-25T00:36:00.443Z","updated_at":"2021-03-25T00:36:00.443Z"}
+status: 200
+retorno:
+{"id":4,"value":5000000,"name":"clarita caneca","created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-25T00:38:40.003Z"}
+
+
+new_test:
+controller: items
+action: show
+body: {"controller":"items","action":"show","id":"4"}
+headers: {"Authorization":"dedeed"}
+path: /items/4
+method: GET
+data:
+Item 4 {"id":4,"name":"clarita caneca","value":5000000,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-25T00:38:40.003Z"}
+Item 5 {"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
+Item 6 {"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"}
+Item 8 {"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"}
+Item 9 {"id":9,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:56.471Z","updated_at":"2021-03-16T23:31:56.471Z"}
+Item 10 {"id":10,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.425Z","updated_at":"2021-03-16T23:31:57.425Z"}
+Item 11 {"id":11,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.902Z","updated_at":"2021-03-16T23:31:57.902Z"}
+Item 12 {"id":12,"name":"caderno","value":30,"created_at":"2021-03-25T00:36:00.443Z","updated_at":"2021-03-25T00:36:00.443Z"}
+status: 200
+retorno:
+{"id":4,"name":"clarita caneca","value":5000000,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-25T00:38:40.003Z"}
+
+
+new_test:
+controller: items
+action: destroy
+body: {"controller":"items","action":"destroy","id":"4"}
+headers: {}
+path: /items/4
+method: DELETE
+data:
+Item 4 {"id":4,"name":"clarita caneca","value":5000000,"created_at":"2021-03-16T23:31:36.839Z","updated_at":"2021-03-25T00:38:40.003Z"}
+Item 5 {"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
+Item 6 {"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"}
+Item 8 {"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"}
+Item 9 {"id":9,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:56.471Z","updated_at":"2021-03-16T23:31:56.471Z"}
+Item 10 {"id":10,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.425Z","updated_at":"2021-03-16T23:31:57.425Z"}
+Item 11 {"id":11,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.902Z","updated_at":"2021-03-16T23:31:57.902Z"}
+Item 12 {"id":12,"name":"caderno","value":30,"created_at":"2021-03-25T00:36:00.443Z","updated_at":"2021-03-25T00:36:00.443Z"}
+status: 200
+retorno:
+{}
+
+
+new_test:
+controller: items
+action: index
+body: {"controller":"items","action":"index"}
+headers: {}
+path: /items
+method: GET
+data:
+Item 5 {"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"}
+Item 6 {"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"}
+Item 8 {"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"}
+Item 9 {"id":9,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:56.471Z","updated_at":"2021-03-16T23:31:56.471Z"}
+Item 10 {"id":10,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.425Z","updated_at":"2021-03-16T23:31:57.425Z"}
+Item 11 {"id":11,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.902Z","updated_at":"2021-03-16T23:31:57.902Z"}
+Item 12 {"id":12,"name":"caderno","value":30,"created_at":"2021-03-25T00:36:00.443Z","updated_at":"2021-03-25T00:36:00.443Z"}
+status: 200
+retorno:
+[{"id":5,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.332Z","updated_at":"2021-03-16T23:31:37.332Z"},{"id":6,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:37.851Z","updated_at":"2021-03-16T23:31:37.851Z"},{"id":8,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:39.503Z","updated_at":"2021-03-16T23:31:39.503Z"},{"id":9,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:56.471Z","updated_at":"2021-03-16T23:31:56.471Z"},{"id":10,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.425Z","updated_at":"2021-03-16T23:31:57.425Z"},{"id":11,"name":"caderno","value":30,"created_at":"2021-03-16T23:31:57.902Z","updated_at":"2021-03-16T23:31:57.902Z"},{"id":12,"name":"caderno","value":30,"created_at":"2021-03-25T00:36:00.443Z","updated_at":"2021-03-25T00:36:00.443Z"}]
