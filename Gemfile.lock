@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/fredericodib/bdd_generator
-  revision: 7d6203485ef0e7cc4d3a742c1d9475d6d7850be4
+  revision: 3675841ebda7c02054e05092e740dc05c4cecd5d
   branch: main
   specs:
     bdd_generator (1.0)
